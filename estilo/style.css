@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Paw';
+    src: url('../fontes/Animal\ Paw.ttf');
+}
+
+@font-face {
+    font-family: 'Some';
+    src: url('../fontes/Some_Animal.ttf');
+}
+
+* {
+    margin: 0px;
+    top: 0px;
+}
+
+:root {
+    --cor1: #FFFF00;
+    --font1: 'Paw';
+    --font2: 'Some';
+}
+
+body {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+header {
+    display: block;
+    box-sizing: border-box;
+    background-color: var(--cor1);
+    background-image: url('../Imagens/patinhas.png');
+    height: 220px;
+    padding: 10px;
+}
+
+header div.logo {
+    top: 0px;
+    margin: 0px;
+    width: 151px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+div.imagem-principal{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header nav {
+    display: flex;
+    position: absolute;
+    left: 67%;
+    transform: translate(-10%);
+    margin-top: 35px;
+    font-family: 'Paw';
+}
+
+header > nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+
+header nav a:hover {
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.home {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h1 {
+    font-family: var(--font2);
+    font-weight: 800;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.home p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: var(--font2);
+    font-weight: 800;
+    font-size: 38px;
+}
+.carrossel {
+    background-color: var(--cor1);
+    width: 85%; /* Largura total do carrossel */
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    height: 90%;
+    width: 90%; /* Largura fixa para cada imagem */
+    margin: 0 10px;
+}
+
+.slide img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--cor1);
+    margin: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+
+  footer p {
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-top: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 7px;
+  }
+
+  /*
+  footer {
+    position: absolute;
+    background-color: var(--cor1);
+    color: black;
+    padding: 10x;
+    bottom: 0%;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height:30px;
+  }
+    */
+
+@media screen and (max-width: 1315px) {
+    header nav {
+        left: 60%;
+        transform: translate(5%);
+    }
+    header nav a{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1033px) {
+    header nav {
+        left: 50%;
+        transform: translate(20%);
+    }
+    header nav a{
+        font-size: 30px;
+        margin-right: 20px;
+    }
+}
+
+/* Estilo do menu para telas pequenas */
+/* Melhorias no menu responsivo */
+@media (max-width: 898px) {
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0%;
+        left:63%;
+        width: 25%;
+        height: 50px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header > nav a {
+        padding: 15px;
+        display: block;
+        font-size: 23px;
+    }
+
+    header nav a:hover {
+        color: white;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        margin-left: 92%;
+        margin-top: 30px;
+    }
+}

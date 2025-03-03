@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         index += direction;
 
         // Inverter direção ao atingir as extremidades
-        if (index >= totalSlides - 3) {
+        if (index >= totalSlides - 4) {
             direction = -1;
         } else if (index <= 0) {
             direction = 1;

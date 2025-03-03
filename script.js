@@ -3,14 +3,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll('.slide');
     const totalSlides = slides.length;
     let index = 0;
+    let direction = 1; // 1 para frente, -1 para trás
 
     function moveCarousel() {
-        index = (index + 1) % totalSlides; // Garante loop infinito sem erro
-        const offset = -index * (slides[0].offsetWidth + 20); // Calcula o deslocamento
+        index += direction;
+
+        // Inverter direção ao atingir as extremidades
+        if (index >= totalSlides - 3) {
+            direction = -1;
+        } else if (index <= 0) {
+            direction = 1;
+        }
+
+        const offset = -index * (slides[0].offsetWidth + 20); // Considera a margem entre slides
         carousel.style.transform = `translateX(${offset}px)`;
     }
 
-    setInterval(moveCarousel, 3000); // Alterna a cada 3s
+    setInterval(moveCarousel, 2000); // Ajuste o tempo conforme necessário
+
 
     // MENU RESPONSIVO
     const menuToggle = document.querySelector(".menu-toggle");

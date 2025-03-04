@@ -110,6 +110,8 @@ header nav a:hover {
     border-radius: 10px;
     padding: 15px;
     margin: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .carousel-container {
@@ -131,45 +133,63 @@ header nav a:hover {
 }
 
 .home p {
-    margin-top: 30px;
-    margin-bottom: 30px;
     font-family: var(--font2);
     font-weight: 800;
     font-size: 38px;
-    background-color: white;
     padding: 5px;
+    margin: 30px auto;
+    width: 50%;
+    background-color: white;
+}
+
+.sobre-nos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%; /* Espaçamento entre os elementos */
+    padding: 20px;
+}
+
+.texto {
+    background-color: var(--cor1);
+    font-family: var(--font2);
+    font-size: 32px;
+    font-weight: 900;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto h2 {
+    font-size: 50px;
+}
+
+.icone {
+    font-size: 20px;
+    display: block;
+}
+
+.imagem img {
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto;
+    object-fit: cover;
 }
 
 footer {
-    background-color: var(--cor1);
-    margin: 0%;
-    bottom: 0%;
-    left: 0%;
-    margin-top: 100%;
+    background-color: var(--cor1); 
+    color: black; 
+    text-align: center; 
+    padding: 5px 0; 
+    font-size: 11px; 
+    font-family: Arial, sans-serif; 
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3); /* Sombra superior suave */
 }
 
-  footer p {
-    display: block;
-    text-align: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 7px;
-  }
-
-  /*
-  footer {
-    position: absolute;
-    background-color: var(--cor1);
-    color: black;
-    padding: 10x;
-    bottom: 0%;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    height:30px;
-  }
-    */
+footer p {
+    margin: 0; 
+}
 
 @media screen and (max-width: 1315px) {
     header nav {

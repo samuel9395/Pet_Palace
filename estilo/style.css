@@ -102,20 +102,13 @@ header nav a:hover {
     margin-bottom: 30px;
 }
 
-.home p {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: var(--font2);
-    font-weight: 800;
-    font-size: 38px;
-}
 .carrossel {
     background-color: var(--cor1);
     width: 85%; /* Largura total do carrossel */
     height: 100%;
     overflow: hidden;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     margin: auto;
 }
 
@@ -128,13 +121,21 @@ header nav a:hover {
 .slide {
     height: 100%;
     width: 90%; /* Largura fixa para cada imagem */
-    margin: 0px 10px 0px 0px;
+    margin: 0px 12px 0px 0px;
 }
 
 .slide img {
     width: 400px;
     height: 300px;
     border-radius: 10px;
+}
+
+.home p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: var(--font2);
+    font-weight: 800;
+    font-size: 38px;
 }
 
 footer {

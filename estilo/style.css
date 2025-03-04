@@ -111,7 +111,6 @@ header nav a:hover {
 }
 .carrossel {
     background-color: var(--cor1);
-    /*background-image: url('../Imagens/patinhas.png');*/
     width: 85%; /* Largura total do carrossel */
     height: 100%;
     overflow: hidden;
@@ -128,7 +127,7 @@ header nav a:hover {
 .slide {
     height: 90%;
     width: 90%; /* Largura fixa para cada imagem */
-    margin: 0 10px;
+    margin: 0px 10px;
 }
 
 .slide img {

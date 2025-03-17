@@ -186,6 +186,7 @@ header nav a:hover {
     margin-bottom: 30px;
     align-items: center;
     text-align: center;
+    padding: 5px;
 }
 
 #contatos h3 {

@@ -177,6 +177,41 @@ header nav a:hover {
     object-fit: cover;
 }
 
+#contatos {
+    background-color: var(--cor1);
+    height: 300px;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+#contatos h3 {
+    font-family: var(--font2);
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.contact {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.contact p {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.sociais img{
+    margin-top: 7px;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+
+
 footer {
     background-color: var(--cor1); 
     color: black; 

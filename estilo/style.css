@@ -5,9 +5,6 @@
 @font-face {
     font-family: 'Paw';
     src: url('../fontes/Animal\ Paw.ttf');
-}
-
-@font-face {
     font-family: 'Some';
     src: url('../fontes/Some_Animal.ttf');
 }
@@ -177,10 +174,67 @@ header nav a:hover {
     object-fit: cover;
 }
 
+#servicos {
+    width: 100%;
+    padding: 0px;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 0px;
+}
+
+#servicos h2 {
+    margin-bottom: 20px;
+    background-color: var(--cor1);
+    background-image: url('../Imagens/patinhas-services.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    width: min-content;
+    margin: auto;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    align-items: center;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10%;
+    gap: 10%; /* Espaçamento entre os elementos */
+}
+
+.services p {
+    margin-top: 10px;
+}
+
+#img01{
+    width: 330px;
+    height: 320px;
+    text-align: justify;
+}
+
+#img02{
+    width: 330px;
+    height: 320px;
+    text-align: justify;
+}
+
+#img03{
+    width: 330px;
+    height: 320px;
+    text-align: justify;
+}
+
 #contatos {
     background-color: var(--cor1);
     height: 300px;
-    width: 400px;
+    width: 300px;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 27px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -190,8 +244,6 @@ header nav a:hover {
 }
 
 #contatos h3 {
-    font-family: var(--font2);
-    font-size: 44px;
     margin-bottom: 15px;
 }
 
@@ -201,9 +253,15 @@ header nav a:hover {
 }
 
 .contact p {
-    font-size: 18px;
+    font-size: 14px;
     text-align: left;
     margin-left: 20px;
+}
+
+.sociais h3 {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    margin-top: 35px;
 }
 
 .sociais img{
@@ -228,6 +286,11 @@ footer p {
 }
 
 @media screen and (max-width: 1315px) {
+
+    header {
+        width: 100vw;
+    }
+
     header nav {
         left: 60%;
         transform: translate(5%);
@@ -238,6 +301,11 @@ footer p {
 }
 
 @media screen and (max-width: 1033px) {
+
+    header {
+        width: 100vw;
+    }
+    
     header nav {
         left: 50%;
         transform: translate(20%);
@@ -246,18 +314,62 @@ footer p {
         font-size: 30px;
         margin-right: 20px;
     }
+
+    .sobre-nos {
+        display: block;
+    }
+
+    .texto {
+        width: 95%;
+    }
+
+    .imagem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .imagem img {
+        width: 60%; /* Ajuste conforme necessário */
+    }
+
+    #servicos {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .services {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services img {
+        margin-bottom: 10px;
+    }
 }
 
 /* Estilo do menu para telas pequenas */
 /* Melhorias no menu responsivo */
 @media (max-width: 898px) {
+
+    header {
+        width: 100vw;
+    }
+
+    .logo {
+        display: none;
+    }
+
     header nav {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 0%;
-        left:63%;
-        width: 25%;
+        left: 53%;
+        width: 29%;
         height: 50px;
         text-align: center;
         transition: all 0.3s ease-in-out;
@@ -282,7 +394,36 @@ footer p {
     .menu-toggle {
         display: flex;
         position: absolute;
-        margin-left: 92%;
+        margin-left: 82%;
         margin-top: 30px;
     }
+
+    .texto {
+        text-align: center;
+        width: 90%;
+        height: 50%;
+        font-family: var(--font2);
+        font-size: 17px;
+        font-weight: 900;
+    }
+    .texto h2 {
+        font-size: 25px;
+    }
+
+    #servicos {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .services {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services img {
+        margin-bottom: 10px;
+    }
+
 }
+

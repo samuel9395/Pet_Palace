@@ -353,7 +353,7 @@ footer p {
 
 /* Estilo do menu para telas pequenas */
 /* Melhorias no menu responsivo */
-@media (max-width: 898px) {
+@media screen and (max-width: 898px) {
 
     header {
         width: 100vw;
@@ -426,4 +426,3 @@ footer p {
     }
 
 }
-
